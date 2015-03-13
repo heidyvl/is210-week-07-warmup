@@ -2,10 +2,11 @@
 # -*- coding: utf-8 -*-
 """A docstring."""
 
-from decimal import Decimal
-data = [1, 2, 3]
+data = [1, 2, 3.5]
 def process_data(data):
-    for i in range(len(data)):
-       tup = [sum(data), float(sum(data)/len(data))]
+    """returns addition and average"""
+    
+    for item in data:
+        tup = (sum(data), sum(data)/len(data))
     return tup
 print process_data(data)
